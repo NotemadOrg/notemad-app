@@ -6,6 +6,7 @@ import ShowPostPage from "./pages/ShowPostPage";
 import AboutUsPage from "./pages/AboutUsPage";
 
 import "./App.css";
+import MapPage from "./pages/MapPage";
 
 function Navigation(props) {
   return (
@@ -25,6 +26,11 @@ function Navigation(props) {
               About Us
             </NavLink>
           </li>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/map-page">
+              Map Page
+            </NavLink>
+          </li>
         </ul>
       </div>
     </nav>
@@ -41,6 +47,7 @@ function App() {
             <Route path="/posts/new" element={<PostFormPage />} />
             <Route path="/posts/:id" element={<ShowPostPage />} />
             <Route path="/about-us" element={<AboutUsPage />} />
+            <Route path="/map-page" element={<MapPage />} />
             <Route path="/" element={<PostsListPage />} />
           </Routes>
         </div>
