@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../images/logo-icon.png"
 import Logo from "../components/Logo";
 import { BrowserRouter as Router, Routes, Route, Link, NavLink } from "react-router-dom";
 
