@@ -1,11 +1,16 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link, NavLink } from "react-router-dom";
 import PostsListPage from "./pages/PostsListPage";
 import PostFormPage from "./pages/PostFormPage";
 import ShowPostPage from "./pages/ShowPostPage";
 import AboutUsPage from "./pages/AboutUsPage";
 
 import Navbar from "./components/Navbar.js"
+import MapPage from "./pages/MapPage"
+import ToGoListPage from "./pages/ToGoListPage"
+import JournalView from "./pages/JournalView"
+import ProfilePage from "./pages/ProfilePage"
+import Homepage from "./pages/Homepage"
 
 import "./App.css";
 
@@ -35,7 +40,16 @@ function Navigation(props) {
 
 function App() {
   return (
-    <Navbar/>
+    <Router>
+      <Navbar/>
+      <Routes>
+      <Route path="/map" element={<MapPage/>}></Route>
+      <Route path="/list" element={<ToGoListPage/>}></Route>
+      <Route path="/journal" element={<JournalView/>}></Route>
+      <Route path="/profile" element={<ProfilePage/>}></Route>
+      <Route path="/login" element={<Homepage/>}></Route>
+      </Routes>
+    </Router>
   );
 }
 
