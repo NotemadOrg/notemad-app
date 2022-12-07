@@ -1,21 +1,24 @@
 import React from "react";
 import logo from "../images/logo-icon.png"
+import Logo from "../components/Logo"
 
 function LoginPage(prop)
 {
     return(
         <div className="loginpage">
-            <img src={logo}></img>
-            <h1>NoteMad</h1>
-            <div className="login-username-content">
-                <p>Username</p>
-                <input type="text"></input>
+            <Logo />
+            {/* Should the line below be className="entire-content" ? */}
+            <div className="entire-content">
+                <div className="content-p">
+                    <p>Username</p>
+                    <p>Password</p>
+                </div>
+                <div className="content-input">
+                    <input type="text"></input>
+                    <input type="password"></input>
+                </div>
             </div>
-            <div className="login-password-content">
-                <p>Password</p>
-                <input type="password"></input>
-            </div>
-            <button>Login</button>
+            <button className="login-signup-button">Login</button>
         </div>
     );
 }

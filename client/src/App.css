@@ -36,8 +36,7 @@ body {
 	src: url(./fonts/Montserrat-Black.ttf)
 }
 
-
-.loginpage, .signuppage {	
+.loginpage, .signuppage, .homepage {	
 	background-color: #00369F;
 	display: flex;
 	flex-direction: column;
@@ -48,25 +47,13 @@ body {
 	width: 100%;
 }
 
+/* Can probably remove h1 from the code below? Check */
 .loginpage > h1, p , .signuppage > h1, p {
 	color: white;
 	margin: 20px;
 }
 
-.loginpage > h1, .signuppage > h1 {
-	font-family: Montaga;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 64px;
-	line-height: 79px;
-}
-
-.loginpage > p, .signuppage > p {
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: 700;
-	font-size: 20px;
-}
+/* Styling for LoginInPage, SignInPage */
 
 .loginpage > input, .signuppage > input {
 	border: none;
@@ -77,48 +64,27 @@ body {
 	padding: 12px;
 }
 
-.loginpage > button, .signuppage > button {
-	margin: 20px;
-	border: none;
-	border-radius: 15px;
-	font-family: Montserrat;
-	font-style: normal;
-	line-height: 29px;
-	color: #151515;
-	padding: 5px 15px;
-}
-
-.login-username-content, .login-password-content, .signup-username-content, .signup-password-content, .signup-email-content {
-	display: flex;
-	align-items: center;
-	text-align: center;
-	left: auto;
-	right: auto;
-}
-
-/* Styling for SignInPage */
-
-.content-p, .content-input {
+.content-p, .content-input { /* paragrpah tag and input field tag */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
-.entire-content { /* refers to the entire */
+.entire-content { /* refers to the entire SignInPage page */
 	display: flex;
 }
 
-.entire-content > div {
+.entire-content > div { /* makes the divs which contain (p, input) to be centered horizontally */
 	width: 50%;
-	text-align: center;
+	align-items: center;
+	margin: 10px;
 }
 
-.content-input > input, .content-p > p {
+.content-input > input, .content-p > p { /* aligns the (p, input) to be vertically aligned on the same line */
 	margin: 20px 0px;
-
 }
 
-.content-p {
+.content-p { /* font style for the p */
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: 700;
@@ -127,4 +93,32 @@ body {
 
 .content-input > input {
 	width: 200px;
+}
+
+/* Styling for the logo with name */
+.logo-and-text {
+	text-align: center;
+}
+
+.logo-and-text > h1 {
+	color: white;
+	margin: 20px;
+	font-family: Montaga;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 64px;
+	line-height: 79px;
+}
+
+/*  */
+.login-signup-button {
+	margin: 20px;
+	border: none;
+	border-radius: 15px;
+	font-family: Montserrat;
+	font-style: normal;
+	line-height: 29px;
+	color: #151515;
+	padding: 5px 15px;
+	width: 100px;	
 }
