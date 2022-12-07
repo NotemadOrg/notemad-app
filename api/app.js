@@ -26,8 +26,9 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // update DB tables based on model updates. Does not handle renaming tables/columns
-// NOTE: toggling this to true drops all tables (including data)
-db.sequelize.sync({ force: false });
+// NOTE: toggling this to true drops all tables (including data)// alter: true checks what is the current table status
+// Might consider using migration
+db.sequelize.sync({ force: false , alter: true});
 
 // start up the server
 if (PORT) {
