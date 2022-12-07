@@ -43,25 +43,25 @@ function Navigation(props) {
 
 function App() {
   return (
-    <Navbar />
+    // <Navbar />
     // <LoginPage/>
     // <SignInPage/>
     // <Homepage />
-      // <Router>
-    //   <Routes>
-    //     <Route path="/homepage" element={<Homepage />}/>
-    //     <Route path="/login" element={<LoginPage/>}/>
-    //     <Route path="/signup" element={<SignInPage/>}/>
-    //     <Navbar/>
-    //     <Route path="/map" element={<MapPage/>}></Route>
-    //     <Route path="/list" element={<ToGoListPage/>}></Route>
-    //     <Route path="/journal" element={<JournalView/>}></Route>
-    //     <Route path="/profile" element={<ProfilePage/>}></Route>
-    //     <Route path="/login" element={<Homepage/>}></Route>
-    //     {/* An error route */}
-    //     <Route path="*" element={<ErrorAlert/>}/>
-    //   </Routes>
-    // </Router>
+    <Router>
+      <Routes>
+        <Route path="/homepage" element={<Homepage />}/>
+        <Route path="/login" element={<LoginPage/>}/>
+        <Route path="/signup" element={<SignInPage/>}/>
+        <Navbar/>
+        <Route path="/map" element={<MapPage/>}></Route>
+        <Route path="/list" element={<ToGoListPage/>}></Route>
+        <Route path="/journal" element={<JournalView/>}></Route>
+        <Route path="/profile" element={<ProfilePage/>}></Route>
+        <Route path="/login" element={<Homepage/>}></Route>
+        {/* An error route */}
+        {/* <Route path="*" element={<ErrorAlert/>}/> */}
+      </Routes>
+    </Router>
   );
 }
 
