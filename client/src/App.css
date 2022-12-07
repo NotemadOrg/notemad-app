@@ -25,3 +25,106 @@ body {
 	text-align: center;
 	padding-bottom: 30px;
 }
+
+@font-face {
+	font-family: Montaga;
+	src: url(./fonts/Montaga-Regular.ttf)
+}
+
+@font-face {
+	font-family: Montserrat;
+	src: url(./fonts/Montserrat-Black.ttf)
+}
+
+
+.loginpage, .signuppage {	
+	background-color: #00369F;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.loginpage > h1, p , .signuppage > h1, p {
+	color: white;
+	margin: 20px;
+}
+
+.loginpage > h1, .signuppage > h1 {
+	font-family: Montaga;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 64px;
+	line-height: 79px;
+}
+
+.loginpage > p, .signuppage > p {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.loginpage > input, .signuppage > input {
+	border: none;
+	border-radius: 15px;
+	width: 144px;
+	height: 40px;
+	font-size: 16px;
+	padding: 12px;
+}
+
+.loginpage > button, .signuppage > button {
+	margin: 20px;
+	border: none;
+	border-radius: 15px;
+	font-family: Montserrat;
+	font-style: normal;
+	line-height: 29px;
+	color: #151515;
+	padding: 5px 15px;
+}
+
+.login-username-content, .login-password-content, .signup-username-content, .signup-password-content, .signup-email-content {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	left: auto;
+	right: auto;
+}
+
+/* Styling for SignInPage */
+
+.content-p, .content-input {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.entire-content { /* refers to the entire */
+	display: flex;
+}
+
+.entire-content > div {
+	width: 50%;
+	text-align: center;
+}
+
+.content-input > input, .content-p > p {
+	margin: 20px 0px;
+
+}
+
+.content-p {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;	
+}
+
+.content-input > input {
+	width: 200px;
+}

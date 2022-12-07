@@ -6,6 +6,8 @@ import ShowPostPage from "./pages/ShowPostPage";
 import AboutUsPage from "./pages/AboutUsPage";
 
 import Navbar from "./components/Navbar.js"
+import LoginPage from "./pages/LoginPage";
+import SignInPage from "./pages/SignInPage";
 
 import "./App.css";
 
@@ -35,7 +37,9 @@ function Navigation(props) {
 
 function App() {
   return (
-    <Navbar/>
+    // <Navbar/>
+    // <LoginPage/>
+    <SignInPage/>
   );
 }
 
