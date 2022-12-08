@@ -5,7 +5,6 @@ function MapPage(prop)
 {
     return(
         <div>
-            <img src={togolist}></img>
         </div>
     );
 }
