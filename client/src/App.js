@@ -19,6 +19,7 @@ import ProfilePage from "./pages/ProfilePage"
 
 import "./App.css";
 import ErrorAlert from "./components/ErrorAlert";
+import JournalForm from "./pages/JournalForm";
 
 function Navigation(props) {
   return (
@@ -57,6 +58,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Navbar/>}/>
         <Route path="/journal" element={<JournalDisplay/>}/>
+        <Route path="/new-entry" element={<JournalForm/>}></Route>
       </Routes>
     </Router>
 

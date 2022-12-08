@@ -12,7 +12,7 @@ function JournalDisplay(prop)
             <div>
                 <Navbar/>
             </div>
-                <div>
+            <div>
                 <h1 className="journal-h1">Journal</h1>
                 <NewJournalButton/>
                 <div className="journal-display-row">
