@@ -1,1 +1,24 @@
 /* Add custom CSS here */
+.journal-preview {
+    background-color: green;
+    color: white;
+    position: absolute;
+    height: 360px;
+    width: 480px;
+    /* bottom: 8px; */
+    /* left: 16px; */
+    margin: 100px 250px;
+}
+.journal-preview-text {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+.journal-preview-text > h2 {
+    font-family: Montaga;
+    font-size: 36px;
+}
+.journal-preview-text > h3 {
+    font-family: Montaga;
+    font-size: 30px;
+}

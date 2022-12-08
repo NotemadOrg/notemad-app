@@ -5,7 +5,10 @@ import React from "react";
 function JournalDisplay(prop)
 {
     return(
-        <></>
+        <div>
+            <h1>Journal</h1>
+            {/* Individual journal component here */}
+        </div>
     );
 }
 
