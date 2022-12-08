@@ -6,6 +6,7 @@ import ShowPostPage from "./pages/ShowPostPage";
 import AboutUsPage from "./pages/AboutUsPage";
 // Delete the below import
 import JournalPreview from "./components/JournalPreview"
+import JournalDisplay from "./pages/JournalDisplay";
 
 import "./App.css";
 
@@ -50,7 +51,8 @@ function App() {
     //   </div>
     // </BrowserRouter>
 
-    <JournalPreview/>
+    // <JournalPreview/>
+    <JournalDisplay/>
   );
 }
 

@@ -1,24 +1,54 @@
-/* Add custom CSS here */
 .journal-preview {
-    background-color: green;
     color: white;
-    position: absolute;
-    height: 360px;
-    width: 480px;
-    /* bottom: 8px; */
-    /* left: 16px; */
-    margin: 100px 250px;
+    position: relative;    
+    /* 16:9 aspect ratio */
+    height: 369px;
+    min-width: 656px;
+    margin: 20px 0px;
+    border: 2px solid black;
+    /* Make the background image the corresponding image from the journal entry in the database */
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1z0d_Jke01v4ErGgNeyx8ROBp-v0TW3ZxBg&usqp=CAU);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .journal-preview-text {
     position: absolute;
     bottom: 8px;
     left: 16px;
+    text-shadow: 2px 2px black;
+    font-family: Montaga;
 }
 .journal-preview-text > h2 {
-    font-family: Montaga;
     font-size: 36px;
 }
 .journal-preview-text > h3 {
-    font-family: Montaga;
     font-size: 30px;
+}
+
+.journal-display-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.journal-h1 {
+    font-family: Montaga;
+    font-size: 64px;
+    margin-left: 30px;
+}
+
+.new-journal-button {
+    background-color: #5c8dec;
+    color: black;
+    border-radius: 15px;
+    border: none;
+    font-family: Montaga;
+    font-size: 20px;
+    padding: 8px;
+}
+.new-journal-button-container {
+    text-align: right;
+    margin-right: 30px;
 }
