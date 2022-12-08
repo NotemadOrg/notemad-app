@@ -5,6 +5,7 @@ import logout from "../images/logout-icon.png"
 import map from "../images/map-icon.png"
 import profile from "../images/profile-icon.png"
 import togolist from "../images/togolist-icon.png"
+import { BrowserRouter as Router, Routes, Route, Link, NavLink } from "react-router-dom";
 
 
 function Navbar() {
@@ -12,11 +13,11 @@ function Navbar() {
 		<div className="wrapper">
 			<nav className="sidebar">
 				<li><img src={logo}></img></li>
-				<li><a href="map.html"><img src={map}></img></a></li>
-				<li><a href="list.html"><img src={togolist}></img></a></li>
-				<li><a href="journal.html"><img src={journal}></img></a></li>
-				<li><a href="profile.html"><img src={profile}></img></a></li>
-				<li><a href="login.html"><img src={logout}></img></a></li>
+				<li><Link to="/map" ><img src={map}></img></Link></li>
+				<li><Link to="/list"><img src={togolist}></img></Link></li>
+				<li><Link to="/journal"><img src={journal}></img></Link></li>
+				<li><Link to="/profile"><img src={profile}></img></Link></li>
+				<li><Link to="/homepage"><img src={logout}></img></Link></li>
 			</nav>
 		</div>
     )

@@ -5,7 +5,7 @@ import PostFormPage from "./pages/PostFormPage";
 import ShowPostPage from "./pages/ShowPostPage";
 import AboutUsPage from "./pages/AboutUsPage";
 
-import Navbar from "./components/Navbar.js"
+import Navbar from "./components/Navbar.js";
 import LoginPage from "./pages/LoginPage";
 import SignInPage from "./pages/SignInPage";
 import Homepage from "./pages/Homepage";
@@ -39,17 +39,14 @@ function Navigation(props) {
 
 function App() {
   return (
-    // <Navbar/>
-    // <LoginPage/>
-    // <SignInPage/>
-    // <Homepage/>
     <Router>
+    <nav>
+			<Homepage/>
+    </nav>
       <Routes>
         <Route path="/homepage" element={<Homepage />}/>
         <Route path="/login" element={<LoginPage/>}/>
         <Route path="/signup" element={<SignInPage/>}/>
-        {/* An error route */}
-        <Route path="*" element={<ErrorAlert/>}/>
       </Routes>
     </Router>
   );

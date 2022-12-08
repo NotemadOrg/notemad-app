@@ -1,13 +1,16 @@
 import React from "react";
 import logo from "../images/logo-icon.png"
 import Logo from "../components/Logo";
+import { useNavigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link, NavLink } from "react-router-dom";
+
 
 function SignInPage(prop)
 {
+    let navigate = useNavigate()
+
     return(
         <div className="signuppage">
-            {/* <img src={logo}></img>
-            <h1>NoteMad</h1> */}
             <Logo />
             <div className="entire-content">
                 <div className="content-p">
@@ -21,7 +24,9 @@ function SignInPage(prop)
                     <input type="password"></input>
                 </div>
             </div>
-            <button className="login-signup-button">Sign Up</button>
+            {/* <button onClick={() => {navigate("/homepage");}} className="login-signup-button">Sign Up</button> */}
+            <Link to="/homepage"><button className="login-signup-button">Sign Up</button></Link>
+
         </div>
     );
 }
