@@ -46,35 +46,45 @@ function Navigation(props) {
 
 function App() {
   return (
-    // <Navbar/>
+<<<<<<< HEAD
+    // Uncomment and DELETE *THIS SPECIFIC LINE*
+    // <BrowserRouter>
+    //   <Navigation />
+    //   <div className="container-xl text-center">
+    //     <div className="row justify-content-center">
+    //       <Routes>
+    //         <Route path="/posts/new" element={<PostFormPage />} />
+    //         <Route path="/posts/:id" element={<ShowPostPage />} />
+    //         <Route path="/about-us" element={<AboutUsPage />} />
+    //         <Route path="/" element={<PostsListPage />} />
+    //       </Routes>
+    //     </div>
+    //   </div>
+    // </BrowserRouter>
+
+    // <JournalPreview/>
+    <JournalDisplay/>
+=======
+    // <Navbar />
     // <LoginPage/>
     // <SignInPage/>
     // <Homepage />
-    // <JournalDisplay/>
-
     <Router>
-      {/* <Navbar/> */}
       <Routes>
-        <Route path="/" element={<Navbar/>}/>
-        <Route path="/journal" element={<JournalDisplay/>}/>
+        <Route path="/homepage" element={<Homepage />}/>
+        <Route path="/login" element={<LoginPage/>}/>
+        <Route path="/signup" element={<SignInPage/>}/>
+        <Navbar/>
+        <Route path="/map" element={<MapPage/>}></Route>
+        <Route path="/list" element={<ToGoListPage/>}></Route>
+        <Route path="/journal" element={<JournalView/>}></Route>
+        <Route path="/profile" element={<ProfilePage/>}></Route>
+        <Route path="/login" element={<Homepage/>}></Route>
+        {/* An error route */}
+        {/* <Route path="*" element={<ErrorAlert/>}/> */}
       </Routes>
     </Router>
-
-    // <Router>
-    //   <Routes>
-    //     <Route path="/homepage" element={<Homepage />}/>
-    //     <Route path="/login" element={<LoginPage/>}/>
-    //     <Route path="/signup" element={<SignInPage/>}/>
-    //     <Navbar/>
-    //     <Route path="/map" element={<MapPage/>}></Route>
-    //     <Route path="/list" element={<ToGoListPage/>}></Route>
-    //     <Route path="/journal" element={<JournalView/>}></Route>
-    //     <Route path="/profile" element={<ProfilePage/>}></Route>
-    //     <Route path="/login" element={<Homepage/>}></Route>
-    //     {/* An error route */}
-    //     {/* <Route path="*" element={<ErrorAlert/>}/> */}
-    //   </Routes>
-    // </Router>
+>>>>>>> navbar-and-login
   );
 }
 
