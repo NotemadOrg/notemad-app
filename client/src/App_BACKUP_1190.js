@@ -46,8 +46,7 @@ function Navigation(props) {
 
 function App() {
   return (
-<<<<<<< HEAD
-    // Uncomment and DELETE *THIS SPECIFIC LINE*
+
     // <BrowserRouter>
     //   <Navigation />
     //   <div className="container-xl text-center">
@@ -63,8 +62,8 @@ function App() {
     // </BrowserRouter>
 
     // <JournalPreview/>
-    <JournalDisplay/>
-=======
+
+
     // <Navbar />
     // <LoginPage/>
     // <SignInPage/>
@@ -84,7 +83,6 @@ function App() {
         {/* <Route path="*" element={<ErrorAlert/>}/> */}
       </Routes>
     </Router>
->>>>>>> navbar-and-login
   );
 }
 

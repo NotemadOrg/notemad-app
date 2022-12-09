@@ -183,3 +183,36 @@ body {
 .page-with-navbar {
     display: flex;
 }
+
+.togo-container{
+	width: 70vw;
+	display: flex;
+	justify-content: space-between;
+	margin: 0px;
+	padding: 1em;
+	border: solid black;
+}
+
+
+.togo-tags{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.togo-button{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.tag-box{
+	background-color: #9FE1AD;
+	padding: 0.5em;
+	margin: 1em;
+	width:fit-content;
+	display: flex;
+}
+
+.togoListContainer{
+	margin: 0px;
+	padding: 4em;
+}

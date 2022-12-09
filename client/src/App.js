@@ -57,6 +57,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Navbar/>}/>
         <Route path="/journal" element={<JournalDisplay/>}/>
+        <Route path="/list" element={<ToGoListPage/>}/>
       </Routes>
     </Router>
 
