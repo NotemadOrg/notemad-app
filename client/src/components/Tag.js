@@ -3,7 +3,7 @@ import React from "react";
 function Tag(prop)
 {
     return (
-        <div className="tag-box" >
+        <div className="tag-box" style={{backgroundColor: prop.color}}>
             {prop.category}
         </div>
     )
