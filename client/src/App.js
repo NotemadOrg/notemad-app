@@ -35,6 +35,8 @@ function App() {
         <Route path="/map-page" element={<MapPage />} />
         <Route path="/journal" element={<JournalDisplay/>}/>
         <Route path="/list" element={<ToGoListPage/>}/>
+        <Route path="/profile" element={<ProfilePage/>}/>
+        <Route path="/login" element={<LoginPage/>}/>
       </Routes>
     </Router>
 
