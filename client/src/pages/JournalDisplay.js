@@ -5,22 +5,21 @@ import Navbar from "../components/Navbar";
 
 //view multiple journals
 
-function JournalDisplay(prop)
-{
-    return(
+function JournalDisplay(prop) {
+    return (
         <div className="page-with-navbar">
             <div>
-                <Navbar/>
+                <Navbar />
             </div>
-                <div>
+            <div className="journal-display-container">
                 <h1 className="journal-h1">Journal</h1>
-                <NewJournalButton/>
+                <NewJournalButton />
                 <div className="journal-display-row">
-                    <JournalPreview/>
-                    <JournalPreview/>
-                    <JournalPreview/>
-                    <JournalPreview/>
-                </div>    
+                    <JournalPreview />
+                    <JournalPreview />
+                    <JournalPreview />
+                    <JournalPreview />
+                </div>
             </div>
         </div>
     );

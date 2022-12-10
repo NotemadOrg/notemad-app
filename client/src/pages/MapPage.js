@@ -7,8 +7,10 @@ function MapPage(prop)
     return(
         <div className="page-with-navbar">
             <Navbar/>
+            <div className="page-content-container">
+                <MapView/>
 
-            <MapView/>
+            </div>
         </div>
     );
 }

@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Routes, Route, Link, NavLink } from "react-rou
 
 function Navbar() {
 	return (
-		<div className="wrapper">
+		<div className="nav-wrapper">
 			<nav className="sidebar">
 				<li><img src={logo}></img></li>
 				<li><Link to="/map-page"><img src={map}></img></Link></li>

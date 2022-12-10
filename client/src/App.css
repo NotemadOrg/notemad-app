@@ -1,28 +1,46 @@
-/* Add custom CSS here */
+/*Map Page CSS*/
+.page-content-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	margin-left: 60px;
+}
 .leaflet-container{
-    width: 90vw;
+    width: 85vw;
     height: 90vh;
+}
+
+/*Journal Page CSS*/
+.journal-display-container{
+	margin: 0px;
+	width: 94vw;
+	padding-top: 2em;
+	margin-left: 60px;
 }
 .journal-preview {
     color: white;
-    position: relative;    
+    position: relative;  
+	display: flex;  
+	align-items: flex-end;
     /* 16:9 aspect ratio */
     height: 369px;
-    min-width: 656px;
+    width: 38vw;
     margin: 20px 0px;
-    border: 2px solid black;
     /* Make the background image the corresponding image from the journal entry in the database */
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1z0d_Jke01v4ErGgNeyx8ROBp-v0TW3ZxBg&usqp=CAU);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+	box-shadow: 10px 10px 5px #aaaaaa;
 }
 .journal-preview-text {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-    text-shadow: 2px 2px black;
+    padding: 40px 16px 8px 16px;
     font-family: Montaga;
+	background-image: linear-gradient(to bottom, rgba(217, 217, 217, 0), rgba(12, 85, 226, 0.67));
+	height: fit-content;
+	width: 100%;
 }
 .journal-preview-text > h2 {
     font-size: 36px;
@@ -33,6 +51,7 @@
 
 .journal-display-row {
     display: flex;
+	width: 85vw;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -63,31 +82,33 @@
 	box-sizing: border-box;
 	/* height: 100%; */
 }
-
+/*Nav Bar CSS*/
 body {
 	padding: 0px;
 	margin: 0px;
 }
-.wrapper {
+.nav-wrapper {
 	display: flex;
-	width: 6vw;
-	/* height: 100vh; */
-    height: 100%;
+	position: fixed;
+	justify-content: center;
+	width: 60px;
+    height: 100vh;
     background-color: #00369F;
 }
-
 .sidebar {
 	/* position: -webkit-sticky; */
 	/* position: sticky; */
-	background-color: #00369F;
-	padding: 12px 7px;
+	padding-top: 1em;
     position: fixed;
-}
 
+}
 .sidebar > li {
 	list-style-type: none;
 	text-align: center;
 	padding-bottom: 30px;
+}
+.sidebar img {
+	width: 70%;
 }
 
 @font-face {
@@ -191,6 +212,7 @@ body {
     display: flex;
 }
 
+/*ToGo List Page CSS*/
 .togo-container{
 	width: 70vw;
 	display: flex;
@@ -237,5 +259,12 @@ body {
 
 .togoListContainer{
 	margin: 0px;
-	padding: 4em;
+	width: 94vw;
+	padding-top: 5em;
+	margin-left: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
 }
