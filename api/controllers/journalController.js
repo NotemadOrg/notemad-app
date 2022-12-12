@@ -1,4 +1,5 @@
 const express = require("express");
+const { MemoryStore } = require("express-session");
 const router = express.Router();
 const db = require("../models");
 const { journal } = db;
@@ -32,6 +33,52 @@ router.post("/create", (req, res) => {
         .catch((err) => {
             res.status(400).json(err);
         });
+});
+
+router.get('/:id', (req, res) => {
+    const { id } = req.params;
+    journal.findByPk(id).then((mjournal) => {
+        if(!mjournal){
+            return res.sendStatus(404);
+        }
+    
+        res.json(mjournal);
+    });
+})
+
+router.put("/:id", (req, res) => {
+    const { id } = req.params;
+    journal.findByPk(id).then((mjournal) => {
+        if (!mjournal){
+            return res.sendStatus(404);
+        }
+
+        mjournal.journal_title = req.body.journal_title;
+        mjournal.journal_body = req.body.journal_body;
+        mjournal.journal_photo = req.body.journal_photo;
+        mjournal.has_visited = req.body.has_visited;
+
+        mjournal
+            .save()
+            .then((updatedJournal) => {
+                res.json(updatedJournal);
+            })
+            .catch((err) => {
+                res.status(400).json(err);
+            });
+    });
+});
+
+router.delete("/:id", (req, res) => {
+    const { id } = req.params;
+    journal.findByPk(id).then((mjournal) => {
+        if(!mjournal) {
+            return res.sendStatus(404);
+        }
+
+        mjournal.destroy();
+        res.sendStatus(204);
+    });
 });
 
 module.exports = router;
