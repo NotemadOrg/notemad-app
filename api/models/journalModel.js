@@ -1,7 +1,5 @@
 'use strict';
-const {
-  Model
-} = require('sequelize');
+const { Model } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class journal extends Model {
     /**
@@ -17,10 +15,10 @@ module.exports = (sequelize, DataTypes) => {
     {
       journal_title: {
         type: DataTypes.STRING,
+        allowNull: false,
         validate: {
           notEmpty: true,
         },
-        allowNull: false,
       },
       journal_body: {
         type: DataTypes.STRING,
@@ -28,16 +26,13 @@ module.exports = (sequelize, DataTypes) => {
       },
       journal_photo: {
         type: DataTypes.STRING,
+        // currently allow null
       },
       has_visited: {
         type: DataTypes.BOOLEAN,
         defaultValue: false,
-        allowNull: false,
+        //allowNull: false,
       },
-      // journal_title: DataTypes.STRING,
-      // journal_body: DataTypes.STRING,
-      // journal_photo: DataTypes.STRING,
-      // has_visited: DataTypes.BOOLEAN
     }, 
     {
       // tablename: journals
@@ -50,6 +45,7 @@ module.exports = (sequelize, DataTypes) => {
 
       // This will add userID as a column to the journal table
       models.journal.belongsTo(models.user);
+      models.journal.belongsTo(models.category);
     }
 
   return journal;
