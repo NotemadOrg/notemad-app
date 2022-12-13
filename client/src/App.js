@@ -19,6 +19,7 @@ import ProfilePage from "./pages/ProfilePage"
 
 import "./App.css";
 import ErrorAlert from "./components/ErrorAlert";
+import JournalForm from "./pages/JournalForm";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <Route path="/list" element={<ToGoListPage/>}/>
         <Route path="/profile" element={<ProfilePage/>}/>
         <Route path="/login" element={<LoginPage/>}/>
+        <Route path="/new-entry" element={<JournalForm/>}/>
       </Routes>
     </Router>
 

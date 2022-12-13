@@ -268,3 +268,88 @@ body {
 	flex-direction: column;
 
 }
+
+/*  */
+.new-entry-container {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    width: 80vw;
+    height: 80vh;
+}
+
+.top-new-entry, .bottom-new-entry {
+    margin: 5px 10px;
+}
+
+.left-new-entry {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-new-entry {
+    margin-left: 20px;
+}
+
+.top-new-entry {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20%;
+}
+
+
+.new-entry-header-input {
+    /* border: none; */
+    border: 1px solid black;
+    font-size: 24px;
+    width: 400px;
+    margin: 5px;
+}
+
+.bottom-new-entry {
+    position: relative;
+    height: 70%;
+    /* padding: 5px 30px 30px 30px; */
+    /* padding: 5px; */
+    text-align: center;
+}
+
+textarea {
+    resize: none;
+}
+
+.new-entry-content-textarea {
+    height: 100%;
+    width: 100%;
+    /* border: none; */
+    font-size: 16px;
+}
+
+.submit-journal-button {
+    text-align: right;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.new-journal-button {
+    background-color: #5c8dec;
+    color: black;
+    border-radius: 15px;
+    border: none;
+    font-family: Montaga;
+    font-size: 20px;
+    padding: 8px;
+    width: fit-content;
+}
+
+.new-entry-page {
+	margin: 40px 60px;
+}
+
+.new-entry-image-p {
+	color: black;
+	font-family: Montaga;
+	font-size: 24px;
+}
