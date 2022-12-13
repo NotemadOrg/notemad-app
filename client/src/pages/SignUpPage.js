@@ -1,8 +1,9 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link, NavLink } from "react-router-dom";
 import logo from "../images/logo-icon.png"
 import Logo from "../components/Logo";
 
-function SignInPage(prop)
+function SignUpPage(prop)
 {
     return(
         <div className="signuppage">
@@ -22,8 +23,9 @@ function SignInPage(prop)
                 </div>
             </div>
             <button className="login-signup-button">Sign Up</button>
+            <Link className="signuploginlink" to="/Login">Login</Link>
         </div>
     );
 }
 
-export default SignInPage;
+export default SignUpPage;
