@@ -13,11 +13,14 @@ function ToGoListPage(prop)
     return(
         <div className="page-with-navbar">
             <Navbar/>
-            <div className="togoListContainer"> 
-                <TogoCard title="Blue Gallery" address="222 E 46th St, New York, NY 10017" category={data1}/>
-                <TogoCard title="Casa Limone" address="20 E 49th St, New York, NY 10017" category={data2}/>
-                <TogoCard title="Beat The Bomb Brooklyn" address="255 Water St, Brooklyn, NY 11201" category={data3}/>
-                <TogoCard title="Sushi Uesugi" address="267 36th St, Brooklyn, NY 11232" category={data4}/>
+            <div className="togoPage-wrapper">
+                <h1 className="journal-h1">My next destination...</h1>
+                <div className="togoListContainer"> 
+                    <TogoCard title="Blue Gallery" address="222 E 46th St, New York, NY 10017" category={data1}/>
+                    <TogoCard title="Casa Limone" address="20 E 49th St, New York, NY 10017" category={data2}/>
+                    <TogoCard title="Beat The Bomb Brooklyn" address="255 Water St, Brooklyn, NY 11201" category={data3}/>
+                    <TogoCard title="Sushi Uesugi" address="267 36th St, Brooklyn, NY 11232" category={data4}/>
+                </div>
             </div>
         </div>
     );

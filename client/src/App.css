@@ -79,14 +79,14 @@
 
 .journal-h1 {
     font-family: Montaga;
-    font-size: 64px;
+    font-size: 54px;
     margin-left: 30px;
 }
 
 .buttons {
     background-color: #5c8dec;
     color: #FFFFFF;
-    border-radius: 15px;
+    border-radius: 7px;
     border: none;
     font-family: Montaga;
     font-size: 20px;
@@ -257,11 +257,16 @@ input[type=text],input[type=password], input[type=email], select {
 	width: 70vw;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	margin: 2em;
 	padding: 1em;
 	border: solid #717171;
 	font-family: Montaga;
 	box-shadow: 10px 10px 5px #aaaaaa;
+	transition: transform .2s; /* Animation */
+}
+.togo-container:hover {
+	transform: scale(1.05);
 }
 
 .address-container{
@@ -283,7 +288,13 @@ input[type=text],input[type=password], input[type=email], select {
 .togo-button{
 	display: flex;
 	justify-content: flex-end;
+	align-self:flex-start;
 }
+
+.checkmark{
+	width: 7em;
+}
+
 
 .tag-box{
 	padding: 0.5em 1.5em;
@@ -299,12 +310,15 @@ input[type=text],input[type=password], input[type=email], select {
 
 .togoListContainer{
 	margin: 0px;
-	width: 94vw;
-	padding-top: 5em;
-	margin-left: 60px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 
+}
+
+.togoPage-wrapper{
+	padding-top: 2em;
+	margin-left: 60px;
+	width: 94vw;
 }
