@@ -39,6 +39,7 @@ function App() {
         <Route path="/profile" element={<ProfilePage/>}/>
         <Route path="/login" element={<LoginPage/>}/>
         <Route path="/new-entry" element={<JournalForm/>}/>
+        <Route path="/view-entry" element={<JournalView/>}/>
       </Routes>
     </Router>
 

@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import { BrowserRouter as Router, Routes, Route, Link, NavLink } from "react-router-dom";
 
 //user enter new journals
 
@@ -11,7 +12,7 @@ function JournalForm(prop)
                 <Navbar/>
             </div>
             <div className="new-entry-page">
-                <h1 className="journal-h1">New Entry</h1>
+                <h1 className="new-entry-h1">New Entry</h1>
                 <div className="new-entry-container">
                     <div className="top-new-entry">
                         <div className="left-new-entry">
@@ -27,7 +28,7 @@ function JournalForm(prop)
                         <textarea rows="20" cols="150" placeholder="Share your experience..." className="new-entry-content-textarea"></textarea>
                     </div>
                     <div className="submit-journal-button">
-                        <button className="new-journal-button">Submit</button>
+                        <Link to="/view-entry"><button className="new-journal-button">Submit</button></Link>
                     </div>
                 </div>
             </div>

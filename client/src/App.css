@@ -15,7 +15,7 @@
 /*Journal Page CSS*/
 .journal-display-container{
 	margin: 0px;
-	width: 94vw;
+	width: 100%;
 	padding-top: 2em;
 	margin-left: 60px;
 }
@@ -51,7 +51,8 @@
 
 .journal-display-row {
     display: flex;
-	width: 85vw;
+	/* width: 85vw; */
+	width: 100%;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -274,9 +275,18 @@ body {
     border: 2px solid black;
     display: flex;
     flex-direction: column;
-    margin: 50px;
-    width: 80vw;
-    height: 80vh;
+    /* margin: 50px; */
+    /* width: 80vw; */
+    /* height: 80vh; */
+
+
+	/* width: auto; */
+	/* height: auto; */
+	/* width: 100ch; */
+	/* width: 100%; */
+	/* margin: 0;
+	margin-left: 60px; */
+	
 }
 
 .top-new-entry, .bottom-new-entry {
@@ -345,11 +355,41 @@ textarea {
 }
 
 .new-entry-page {
-	margin: 40px 60px;
+	margin-top: 30px;
+	margin-right: 0px;
+	margin-left: 100px;
+	width: 90%;
+	height: 100%;
 }
 
 .new-entry-image-p {
 	color: black;
 	font-family: Montaga;
 	font-size: 24px;
+}
+
+/* Individual journal view */
+.entry-image {
+	max-width: 70%;
+	height: auto;
+	margin-top: 10px;
+}
+
+.new-entry-h1 {
+	font-family: Montaga;
+    font-size: 64px;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+.view-entry-p {
+	color: black;
+	text-align: left;
+	overflow-wrap: break-word;
+}
+
+.display-block {
+	display: block;
 }
