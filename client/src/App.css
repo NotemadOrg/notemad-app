@@ -102,7 +102,7 @@
     flex-wrap: wrap;
 }
 
-.journal-h1 {
+.headline-h1 {
     font-family: Montaga;
     font-size: 54px;
     margin-left: 30px;
@@ -345,4 +345,65 @@ input[type=text],input[type=password], input[type=email], select {
 	padding-top: 2em;
 	margin-left: 60px;
 	width: 94vw;
+}
+/* Profile Page CSS */
+.profile-wrapper{
+	margin: 0px;
+	width: 100vw;
+	padding-top: 2em;
+	margin-left: 60px;
+	font-family: Montaga;
+}
+.profile-content{
+	display: flex;
+}
+.profileInfo-container{
+	width: 40%;
+	height: 75vh;
+	margin: 2em;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	flex-direction: column;
+	padding: 2em;
+}
+
+.profile-journalSnippet{
+	width: 60%;
+	height: 75vh;
+	margin: 2em;
+	display: flex;
+	align-items: left;
+	align-content: center;
+	flex-direction: column;
+	padding: 1em;
+}
+
+
+.profile-journalSnippet > h2{
+	padding-left: 0.5em;
+}
+
+.profile-pic{
+	width: 20vw;
+	height: 20vw;
+	border-radius: 50%;
+	background-color: #aaaaaa;
+	padding:0 ;
+}
+.profile-name{
+	font-size: 32px;
+}
+.profile-email{
+	font-size: 18px;
+}
+.profile-journalList{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.profile-journalList > .journal-preview{
+	width: 45%;
+	height: 20vh;
 }

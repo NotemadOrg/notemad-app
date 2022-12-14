@@ -17,7 +17,7 @@ function JournalDisplay(prop) {
                 <Navbar />
             </div>
             <div className="journal-display-container">
-                <h1 className="journal-h1">Journal</h1>
+                <h1 className="headline-h1">Journal</h1>
                 <NewJournalButton />
                 <div className="journal-display-row">
                     <JournalPreview date="Sept. 7, 2020" place="The Museum of Modern Art" photo={image1}/>
