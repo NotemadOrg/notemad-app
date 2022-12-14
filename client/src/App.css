@@ -51,7 +51,7 @@
     /* Make the background image the corresponding image from the journal entry in the database */
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 105%;
+    background-size: 110%;
 	box-shadow: 10px 10px 5px #aaaaaa;
 	border-radius: 7px;
 
@@ -59,7 +59,7 @@
 }
 .journal-preview:hover{
 	transform: scale(1.05);
-	background-size: 100%;
+	background-size: 107%;
 }
 
 .journal-preview-text {
