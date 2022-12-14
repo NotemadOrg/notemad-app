@@ -434,11 +434,12 @@ input[type=text],input[type=password], input[type=email], select {
     border: 2px solid #717171;
 	border-radius: 7px;
     display: flex;
-    flex-direction: column;
+	flex-direction: column;
     margin: 50px;
 	padding: 1em;
     width: 80vw;
-    height: 80vh;
+    /* height: 80vh; */
+	height: auto;
 }
 
 .top-new-entry, .bottom-new-entry {
