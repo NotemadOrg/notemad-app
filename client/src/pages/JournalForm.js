@@ -24,7 +24,7 @@ function JournalForm(prop)
                         </div>
                     </div>
                     <div className="bottom-new-entry">
-                        <textarea rows="20" cols="150" placeholder="Share your experience..." className=".new-entry-content-textarea"></textarea>
+                        <textarea rows="20" cols="150" placeholder="Share your experience..." className="new-entry-content-textarea"></textarea>
                     </div>
                     <div className="submit-journal-button">
                         <button className="new-journal-button">Submit</button>
