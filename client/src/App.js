@@ -33,6 +33,7 @@ function App() {
       {/* <Navbar/> */}
       <Routes>
         <Route path="/" element={<Navbar/>}/>
+        <Route path="/homepage" element={<Homepage/>}/>
         <Route path="/map-page" element={<MapPage />} />
         <Route path="/journal" element={<JournalDisplay/>}/>
         <Route path="/list" element={<ToGoListPage/>}/>
