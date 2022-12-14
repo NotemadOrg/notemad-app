@@ -14,6 +14,7 @@ import SignUpPage from "./pages/SignUpPage";
 import Homepage from "./pages/Homepage.js";
 import MapPage from "./pages/MapPage"
 import ToGoListPage from "./pages/ToGoListPage"
+import ToGoListForm from "./pages/ToGoListForm"
 import JournalView from "./pages/JournalView"
 import ProfilePage from "./pages/ProfilePage"
 
@@ -37,6 +38,7 @@ function App() {
         <Route path="/map-page" element={<MapPage />} />
         <Route path="/journal" element={<JournalDisplay/>}/>
         <Route path="/list" element={<ToGoListPage/>}/>
+        <Route path="/new-togo-entry" element={<ToGoListForm/>}/>
         <Route path="/profile" element={<ProfilePage/>}/>
         <Route path="/login" element={<LoginPage/>}/>
         <Route path="/new-entry" element={<JournalForm/>}/>
