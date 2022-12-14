@@ -49,24 +49,49 @@
     width: 38vw;
     margin: 20px 0px;
     /* Make the background image the corresponding image from the journal entry in the database */
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1z0d_Jke01v4ErGgNeyx8ROBp-v0TW3ZxBg&usqp=CAU);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 105%;
 	box-shadow: 10px 10px 5px #aaaaaa;
+	border-radius: 7px;
+
+	transition: transform .2s; /* Animation */
 }
+.journal-preview:hover{
+	transform: scale(1.05);
+	background-size: 100%;
+}
+
 .journal-preview-text {
     padding: 40px 16px 8px 16px;
     font-family: Montaga;
 	background-image: linear-gradient(to bottom, rgba(217, 217, 217, 0), rgba(12, 85, 226, 0.67));
 	height: fit-content;
 	width: 100%;
+	border-radius: 0px 0px 7px 7px;
 }
 .journal-preview-text > h2 {
     font-size: 36px;
 }
 .journal-preview-text > h3 {
     font-size: 30px;
+}
+
+.journal-preview-text > .address-container{
+	align-items: flex-end;
+	margin-bottom: 0px;
+}
+
+.journal-preview-text > .address-container > h3{
+	font-size: 18px;
+	align-self: center;
+}
+
+.journal-preview-text > .address-container > .address-marker-icon{
+	margin-bottom: 0.5em;
+	margin-right: 0.5em;
+	width: 25px;
+	height: 35px
 }
 
 .journal-display-row {
