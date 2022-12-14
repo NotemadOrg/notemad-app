@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import TogoCard from "../components/TogoCard";
+import NewToGoListButton from "../components/NewToGoListButton";
 
 
 function ToGoListPage(prop)
@@ -15,6 +16,7 @@ function ToGoListPage(prop)
             <Navbar/>
             <div className="togoPage-wrapper">
                 <h1 className="headline-h1">My next destination...</h1>
+                <NewToGoListButton />
                 <div className="togoListContainer"> 
                     <TogoCard title="Blue Gallery" address="222 E 46th St, New York, NY 10017" category={data1}/>
                     <TogoCard title="Casa Limone" address="20 E 49th St, New York, NY 10017" category={data2}/>

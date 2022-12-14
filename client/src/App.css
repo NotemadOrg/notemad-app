@@ -540,3 +540,14 @@ textarea {
 .display-block {
 	display: block;
 }
+
+/* Togo List Dropdown */
+.search_categories{
+	font-size: 17px;
+	padding: 10px 8px 10px 14px;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	overflow: hidden;
+	position: relative;
+  }
