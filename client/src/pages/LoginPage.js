@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link, NavLink } from "react-router-dom";
 import logo from "../images/logo-icon.png"
 import Logo from "../components/Logo"
 
@@ -19,6 +20,7 @@ function LoginPage(prop)
                 </div>
             </div>
             <button className="login-signup-button">Login</button>
+            <Link className="signuploginlink" to="/signup">Sign Up</Link>
         </div>
     );
 }

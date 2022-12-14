@@ -11,11 +11,11 @@ function JournalForm(prop)
                 <Navbar/>
             </div>
             <div className="new-entry-page">
-                <h1 className="journal-h1">New Entry</h1>
+                <h1 className="headline-h1">New Entry</h1>
                 <div className="new-entry-container">
                     <div className="top-new-entry">
                         <div className="left-new-entry">
-                            <input placeholder="Insert title here..." className="new-entry-header-input"></input>
+                            <input placeholder="Insert date here..." className="new-entry-header-input"></input>
                             <input placeholder="Insert address here..." className="new-entry-header-input"></input>
                         </div>
                         <div className="right-new-entry">
@@ -27,7 +27,7 @@ function JournalForm(prop)
                         <textarea rows="20" cols="150" placeholder="Share your experience..." className="new-entry-content-textarea"></textarea>
                     </div>
                     <div className="submit-journal-button">
-                        <button className="new-journal-button">Submit</button>
+                        <button className="buttons">Submit</button>
                     </div>
                 </div>
             </div>

@@ -10,7 +10,7 @@ import JournalDisplay from "./pages/JournalDisplay";
 
 import Navbar from "./components/Navbar.js"
 import LoginPage from "./pages/LoginPage";
-import SignInPage from "./pages/SignInPage";
+import SignInPage from "./pages/SignUpPage";
 import Homepage from "./pages/Homepage.js";
 import MapPage from "./pages/MapPage"
 import ToGoListPage from "./pages/ToGoListPage"

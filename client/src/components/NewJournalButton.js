@@ -5,7 +5,7 @@ function NewJournalButton(props) {
     return(
         <div className="new-journal-button-container">
             {/* Need to add onclick event that goes to create new entry page */}
-            <Link to="/new-entry"><button className="new-journal-button">New Entry</button></Link>
+            <Link to="/new-entry"><button className="buttons">New Entry</button></Link>
         </div>
     )
 }

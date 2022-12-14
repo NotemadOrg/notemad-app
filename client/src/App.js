@@ -10,7 +10,7 @@ import JournalDisplay from "./pages/JournalDisplay";
 
 import Navbar from "./components/Navbar.js"
 import LoginPage from "./pages/LoginPage";
-import SignInPage from "./pages/SignInPage";
+import SignUpPage from "./pages/SignUpPage";
 import Homepage from "./pages/Homepage.js";
 import MapPage from "./pages/MapPage"
 import ToGoListPage from "./pages/ToGoListPage"
@@ -39,6 +39,7 @@ function App() {
         <Route path="/profile" element={<ProfilePage/>}/>
         <Route path="/login" element={<LoginPage/>}/>
         <Route path="/new-entry" element={<JournalForm/>}/>
+        <Route path="/signup" element={<SignUpPage/>}/>
       </Routes>
     </Router>
 
