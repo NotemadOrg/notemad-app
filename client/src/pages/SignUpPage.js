@@ -22,7 +22,7 @@ function SignUpPage(prop)
                     <input type="password"></input>
                 </div>
             </div>
-            <button className="login-signup-button">Sign Up</button>
+            <Link to="/map-page"><button className="login-signup-button">Sign Up</button></Link>
             <Link className="signuploginlink" to="/Login">Login</Link>
         </div>
     );
